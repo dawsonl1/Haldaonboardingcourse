@@ -1,24 +1,13 @@
 import React from 'react';
 import { ChevronLeft, Edit2, CheckCircle2 } from 'lucide-react';
 
-interface FormConfig {
-  audiences: string[];
-  urls: string[];
-  challenges: string;
-}
-
-interface ContentCard {
-  id: string;
-  headline: string;
-  subheadline: string;
-  callToAction: string;
-  link: string;
-}
+import type { ContentCard, CRMProvider, DeliveryDestination, FormConfig, LandingPageRequest } from '../onboarding/types';
+import type { OnboardingStepId } from '../onboarding/steps';
 
 interface ReviewPageProps {
   onBack: () => void;
   onFinish: () => void;
-  onEdit: (page: string) => void;
+  onEdit: (page: OnboardingStepId) => void;
   
   // Branding data
   driveLink: string;
@@ -32,13 +21,13 @@ interface ReviewPageProps {
   contentCards: ContentCard[];
   
   // Integrations data
-  deliveryDestination: 'crm' | 'google-sheet' | null;
-  crmProvider: string;
+  deliveryDestination: DeliveryDestination;
+  crmProvider: CRMProvider;
   otherCrmName: string;
   googleEmail: string;
   
   // AI Landing Pages data
-  landingPageRequest: 'yes' | 'no' | null;
+  landingPageRequest: LandingPageRequest;
 }
 
 export function ReviewPage({ 

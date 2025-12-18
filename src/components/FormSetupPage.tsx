@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronRight, Plus, X, GripVertical, CheckCircle2, AlertCircle, Users, Globe, ChevronDown, ChevronUp, ChevronLeft } from 'lucide-react';
 
+import type { FormConfig } from '../onboarding/types';
+
 interface FormSetupPageProps {
   onNext: (selectedForms: string[], formConfigs: Record<string, FormConfig>) => void;
   onBack: () => void;
@@ -15,12 +17,6 @@ interface FormType {
   required?: boolean;
   gifUrl?: string;
   liveUrl?: string;
-}
-
-interface FormConfig {
-  audiences: string[];
-  urls: string[];
-  challenges: string;
 }
 
 export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initialFormConfigs = {} }: FormSetupPageProps) {

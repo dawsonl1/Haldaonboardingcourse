@@ -148,7 +148,6 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                     onChange={(e) => setDriveLink(e.target.value)}
                     placeholder="https://drive.google.com/..."
                     className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 bg-white"
-                    style={{ focusRingColor: '#0e1016' }}
                   />
                 </div>
                 <p className="text-gray-600 text-sm mt-3">
@@ -185,7 +184,6 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                         onKeyPress={handleKeyPress}
                         placeholder="e.g., Small class sizes"
                         className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50"
-                        style={{ focusRingColor: '#0e1016' }}
                       />
                       <button
                         onClick={handleAddFeature}

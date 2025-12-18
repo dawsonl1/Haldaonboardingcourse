@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ChevronRight, ChevronLeft, CheckCircle2 } from 'lucide-react';
 
+import type { CRMProvider, DeliveryDestination } from '../onboarding/types';
+
 interface IntegrationsPageProps {
   onNext: (
     deliveryDestination: DeliveryDestination,
@@ -14,9 +16,6 @@ interface IntegrationsPageProps {
   initialOtherCrmName?: string;
   initialGoogleEmail?: string;
 }
-
-type DeliveryDestination = 'crm' | 'google-sheet' | null;
-type CRMProvider = 'FACTS' | 'FinalSite' | 'Blackbaud' | 'HubSpot' | 'Insightly' | 'RenWeb' | 'Other' | '';
 
 export function IntegrationsPage({ 
   onNext, 

@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
 import { ChevronRight, ChevronLeft, Plus, X, Link as LinkIcon, AlertCircle, CheckCircle2 } from 'lucide-react';
 
+import type { ContentCard } from '../onboarding/types';
+
 interface AIHubPageProps {
   onNext: (contentCards: ContentCard[]) => void;
   onBack: () => void;
   initialContentCards?: ContentCard[];
-}
-
-interface ContentCard {
-  id: string;
-  headline: string;
-  subheadline: string;
-  callToAction: string;
-  link: string;
 }
 
 export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPageProps) {

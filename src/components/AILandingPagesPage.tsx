@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { ChevronRight, ChevronLeft, CheckCircle2 } from 'lucide-react';
 
+import type { LandingPageRequest } from '../onboarding/types';
+
 interface AILandingPagesPageProps {
   onNext: (landingPageRequest: LandingPageRequest) => void;
   onBack: () => void;
   initialLandingPageRequest?: LandingPageRequest;
 }
-
-type LandingPageRequest = 'yes' | 'no' | null;
 
 export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest = null }: AILandingPagesPageProps) {
   const [landingPageRequest, setLandingPageRequest] = useState<LandingPageRequest>(initialLandingPageRequest);

@@ -1,39 +1,19 @@
 import React from 'react';
 import { X } from 'lucide-react';
 
-interface NavigationStep {
-  id: string;
-  label: string;
-  pageType: string;
-  offset: number; // horizontal offset for fun staggered layout
-}
+import { onboardingSteps, type OnboardingStepId } from '../onboarding/steps';
 
 interface NavigationSidebarProps {
   isOpen: boolean;
   onClose: () => void;
-  currentPage: string;
-  onNavigate: (page: string) => void;
+  currentPage: OnboardingStepId;
+  onNavigate: (page: OnboardingStepId) => void;
 }
 
 export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: NavigationSidebarProps) {
   const [dotPositions, setDotPositions] = React.useState<{ x: number; y: number }[]>([]);
   const dotRefs = React.useRef<(HTMLDivElement | null)[]>([]);
   const containerRef = React.useRef<HTMLDivElement>(null);
-
-  const steps: NavigationStep[] = [
-    { id: 'welcome', label: 'Welcome', pageType: 'welcome', offset: 0 },
-    { id: 'how-halda-works', label: 'How Halda Works', pageType: 'how-halda-works', offset: 0 },
-    { id: 'branding', label: 'Branding', pageType: 'branding', offset: 0 },
-    { id: 'form-setup', label: 'Form Setup', pageType: 'form-setup', offset: 0 },
-    { id: 'ai-hub', label: 'AI Hub', pageType: 'ai-hub', offset: 0 },
-    { id: 'integrations', label: 'Integrations', pageType: 'integrations', offset: 0 },
-    { id: 'ai-landing-pages', label: 'AI Landing Pages', pageType: 'ai-landing-pages', offset: 0 },
-    { id: 'script-installation', label: 'Script Installation', pageType: 'script-installation', offset: 0 },
-    { id: 'ai-training', label: 'AI Training', pageType: 'ai-training', offset: 0 },
-    { id: 'account-management', label: 'Account Management', pageType: 'account-management', offset: 0 },
-    { id: 'review', label: 'Review & Submit', pageType: 'review', offset: 0 },
-    { id: 'ending', label: 'Complete!', pageType: 'ending', offset: 0 },
-  ];
 
   React.useEffect(() => {
     if (!containerRef.current) return;
@@ -53,8 +33,8 @@ export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: 
     setDotPositions(positions);
   }, [isOpen]);
 
-  const handleNavigate = (pageType: string) => {
-    onNavigate(pageType);
+  const handleNavigate = (page: OnboardingStepId) => {
+    onNavigate(page);
     onClose();
   };
 
@@ -102,7 +82,7 @@ export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: 
                   
                   {/* Colored line for completed steps */}
                   {(() => {
-                    const currentIndex = steps.findIndex(s => s.pageType === currentPage);
+                    const currentIndex = onboardingSteps.findIndex(s => s.id === currentPage);
                     if (currentIndex > 0 && dotPositions[currentIndex]) {
                       return (
                         <line
@@ -123,9 +103,9 @@ export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: 
 
             {/* Steps with staggered layout */}
             <div className="relative space-y-4">
-              {steps.map((step, index) => {
-                const isActive = currentPage === step.pageType;
-                const isPast = steps.findIndex(s => s.pageType === currentPage) > index;
+              {onboardingSteps.map((step, index) => {
+                const isActive = currentPage === step.id;
+                const isPast = onboardingSteps.findIndex(s => s.id === currentPage) > index;
 
                 // Determine dot color
                 let dotColor = '#d1d5db'; // gray for future steps
@@ -138,7 +118,7 @@ export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: 
                 return (
                   <div key={step.id}>
                     <button
-                      onClick={() => handleNavigate(step.pageType)}
+                      onClick={() => handleNavigate(step.id)}
                       className="relative flex items-center w-full px-4 py-3 rounded-xl transition-all group"
                       style={{
                         backgroundColor: isActive ? '#4fabff22' : 'transparent',
@@ -156,7 +136,7 @@ export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: 
                       }}
                     >
                       {/* Content container with offset */}
-                      <div className="flex items-center gap-3" style={{ marginLeft: `${step.offset}px` }}>
+                      <div className="flex items-center gap-3" style={{ marginLeft: '0px' }}>
                         {/* Dot indicator on the left */}
                         <div className="relative z-10 flex-shrink-0">
                           <div
