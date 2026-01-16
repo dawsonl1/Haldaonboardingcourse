@@ -83,7 +83,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
           {/* Intro Video Section */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto">
-              <div className="rounded-lg aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e1016' }}>
+              <div className="rounded-lg aspect-video flex items-center justify-center" style={{ backgroundColor: '#000000' }}>
                 <div className="text-center">
                   <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4">
                     <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"></div>
@@ -112,7 +112,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
           {/* The Big Picture Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#907fff22', borderLeft: '4px solid #907fff' }}>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 The big picture
               </h2>
 
@@ -124,25 +124,25 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 A visitor may arrive by browsing your website or by clicking a link from an email or advertisement. From there, Halda helps guide them and capture their information at the right moment.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>Conceptually, it works like this:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>Conceptually, it works like this:</p>
 
               {/* Flow Diagram */}
-              <div className="rounded-lg p-8" style={{ backgroundColor: '#ffffff99', border: '2px solid #0e101633' }}>
+              <div className="rounded-lg p-8" style={{ backgroundColor: '#ffffff99', border: '2px solid #00000033' }}>
                 <div className="flex items-center justify-center gap-4 flex-wrap">
-                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #0e101633' }}>
-                    <p style={{ color: '#0e1016' }}>Visitor</p>
+                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #00000033' }}>
+                    <p style={{ color: '#000000' }}>Visitor</p>
                   </div>
-                  <ArrowRight className="w-6 h-6 flex-shrink-0" style={{ color: '#0e1016' }} />
-                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #0e101633' }}>
-                    <p style={{ color: '#0e1016' }}>Website page or<br />campaign link</p>
+                  <ArrowRight className="w-6 h-6 flex-shrink-0" style={{ color: '#000000' }} />
+                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #00000033' }}>
+                    <p style={{ color: '#000000' }}>Website page or<br />campaign link</p>
                   </div>
-                  <ArrowRight className="w-6 h-6 flex-shrink-0" style={{ color: '#0e1016' }} />
-                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #0e101633' }}>
-                    <p style={{ color: '#0e1016' }}>Form, AI Hub, or<br />AI Landing Page</p>
+                  <ArrowRight className="w-6 h-6 flex-shrink-0" style={{ color: '#000000' }} />
+                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #00000033' }}>
+                    <p style={{ color: '#000000' }}>Form, AI Hub, or<br />AI Landing Page</p>
                   </div>
-                  <ArrowRight className="w-6 h-6 flex-shrink-0" style={{ color: '#0e1016' }} />
-                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #0e101633' }}>
-                    <p style={{ color: '#0e1016' }}>Your selected<br />system</p>
+                  <ArrowRight className="w-6 h-6 flex-shrink-0" style={{ color: '#000000' }} />
+                  <div className="px-6 py-4 rounded-lg text-center" style={{ backgroundColor: '#ffffff', border: '2px solid #00000033' }}>
+                    <p style={{ color: '#000000' }}>Your selected<br />system</p>
                   </div>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
           {/* Forms on Your Website Section */}
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
-              <h2 className="mb-8 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-8 text-3xl" style={{ color: '#000000' }}>
                 Forms on your website
               </h2>
 
@@ -172,7 +172,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 </div>
 
                 <div className="rounded-lg p-6" style={{ backgroundColor: '#4fabff22' }}>
-                  <p className="mb-4" style={{ color: '#0e1016' }}>Common form use cases include:</p>
+                  <p className="mb-4" style={{ color: '#000000' }}>Common form use cases include:</p>
                   <div className="space-y-2">
                     {formUseCases.map((useCase, index) => (
                       <button
@@ -181,11 +181,11 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                         className="w-full text-left px-4 py-3 rounded-lg transition-all flex items-center gap-3"
                         style={{
                           backgroundColor: selectedFormExample === index ? '#4fabff' : 'transparent',
-                          color: selectedFormExample === index ? '#ffffff' : '#0e1016'
+                          color: selectedFormExample === index ? '#ffffff' : '#000000'
                         }}
                       >
                         <span className="w-2 h-2 rounded-full flex-shrink-0" style={{
-                          backgroundColor: selectedFormExample === index ? '#ffffff' : '#0e1016'
+                          backgroundColor: selectedFormExample === index ? '#ffffff' : '#000000'
                         }}></span>
                         <span>{useCase.label}</span>
                       </button>
@@ -197,7 +197,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
               {/* Form Example Preview */}
               <div className="max-w-4xl mx-auto">
                 <div className="rounded-lg overflow-hidden border-2" style={{ borderColor: '#4fabff66', backgroundColor: '#ffffff' }}>
-                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                     <img 
                       src={formUseCases[selectedFormExample].gifUrl}
                       alt={`${formUseCases[selectedFormExample].label} example`}
@@ -225,14 +225,14 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* The AI Hub Section */}
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#907fff' }}></div>
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 The AI Hub
               </h2>
 
@@ -240,7 +240,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 In addition to individual forms, Halda includes a built-in hub that gives visitors a guided place to explore information and take action.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>From the AI Hub, visitors can:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>From the AI Hub, visitors can:</p>
               <ul className="space-y-2 mb-6">
                 {aiHubCapabilities.map((capability, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -254,7 +254,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 The AI Hub creates a self-serve experience that helps families move forward with confidence.
               </p>
 
-              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#0e101633' }}>
+              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#00000033' }}>
                 We will walk through configuring the AI Hub later in this onboarding.
               </p>
             </div>
@@ -262,7 +262,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
             {/* AI Hub Preview Card */}
             <div className="mt-8">
               <div className="rounded-lg overflow-hidden border-2" style={{ borderColor: '#907fff66', backgroundColor: '#ffffff' }}>
-                <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+                <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                   <img 
                     src="https://placeholder-gif-url.com/ai-hub.gif"
                     alt="AI Hub example"
@@ -290,17 +290,17 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
           {/* AI Landing Pages Section */}
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
-              <h2 className="mb-8 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-8 text-3xl" style={{ color: '#000000' }}>
                 AI Landing Pages
               </h2>
 
               <div className="grid md:grid-cols-2 gap-8 mb-8">
                 <div className="rounded-lg p-6" style={{ backgroundColor: '#4fabff22' }}>
-                  <p className="mb-4" style={{ color: '#0e1016' }}>Schools commonly use AI Landing Pages for:</p>
+                  <p className="mb-4" style={{ color: '#000000' }}>Schools commonly use AI Landing Pages for:</p>
                   <ul className="space-y-2">
                     {landingPageUses.map((use, index) => (
                       <li key={index} className="flex gap-3 items-start">
-                        <Target className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#0e1016' }} />
+                        <Target className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#000000' }} />
                         <span className="text-gray-700">{use}</span>
                       </li>
                     ))}
@@ -321,7 +321,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
               {/* AI Landing Page Preview Card */}
               <div className="max-w-4xl mx-auto">
                 <div className="rounded-lg overflow-hidden border-2" style={{ borderColor: '#ffdf4466', backgroundColor: '#ffffff' }}>
-                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                     <img 
                       src="https://placeholder-gif-url.com/ai-landing-page.gif"
                       alt="AI Landing Page example"
@@ -336,7 +336,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 px-6 py-3 rounded-lg transition-all hover:opacity-90"
-                      style={{ backgroundColor: '#ffdf44', color: '#0e1016' }}
+                      style={{ backgroundColor: '#ffdf44', color: '#000000' }}
                     >
                       <Globe className="w-5 h-5" />
                       See it live
@@ -349,13 +349,13 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* How Setup Will Work Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#ffdf4422', borderLeft: '4px solid #ffdf44' }}>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 How setup will work
               </h2>
 
@@ -363,11 +363,11 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 Setup happens in clear stages so nothing feels overwhelming.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>You will move through:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>You will move through:</p>
               <ul className="space-y-2 mb-6">
                 {setupStages.map((stage, index) => (
                   <li key={index} className="flex gap-3 items-start">
-                    <span style={{ color: '#0e1016' }}>{index + 1}.</span>
+                    <span style={{ color: '#000000' }}>{index + 1}.</span>
                     <span className="text-gray-700">{stage}</span>
                   </li>
                 ))}
@@ -383,11 +383,11 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#fe8576' }}></div>
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 What success looks like
               </h2>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>When everything is set up:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>When everything is set up:</p>
               <ul className="space-y-3 mb-6">
                 {successOutcomes.map((outcome, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -397,7 +397,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 ))}
               </ul>
 
-              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#0e101633' }}>
+              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#00000033' }}>
                 The goal is clarity for families and efficiency for your team.
               </p>
             </div>
@@ -405,8 +405,8 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
 
           {/* What This Page Is Not Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <div className="inline-block rounded-lg p-6" style={{ backgroundColor: '#ffffff99', border: '1px solid #0e101633' }}>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+            <div className="inline-block rounded-lg p-6" style={{ backgroundColor: '#ffffff99', border: '1px solid #00000033' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 What this page is not
               </h2>
 
@@ -414,7 +414,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 This page is not about setup or configuration.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>You do not need to decide:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>You do not need to decide:</p>
               <ul className="space-y-2 mb-6">
                 {notDecidingYet.map((item, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -437,7 +437,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 <button 
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -446,7 +446,7 @@ export function HowHaldaWorksPage({ onNext, onBack }: HowHaldaWorksPageProps) {
                 <button 
                   onClick={onNext}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to branding and appearance
                   <ChevronRight className="w-5 h-5" />

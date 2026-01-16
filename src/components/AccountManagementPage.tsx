@@ -49,7 +49,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#4fabff' }}></div>
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 Primary goal
               </h2>
               <p className="text-gray-700 text-lg">
@@ -61,7 +61,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
           {/* Intro Video Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl overflow-hidden border-2" style={{ borderColor: '#4fabff66', backgroundColor: '#ffffff' }}>
-              <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+              <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                 <div className="text-center px-8">
                   <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: '#4fabff99' }}>
                     <div className="w-0 h-0 border-l-[16px] border-l-white border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1"></div>
@@ -94,7 +94,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Your account team Section */}
@@ -102,7 +102,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
             <div className="rounded-xl p-8" style={{ backgroundColor: '#907fff22', borderLeft: '4px solid #907fff' }}>
               <div className="flex items-start gap-4 mb-6">
                 <Users className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#907fff' }} />
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   Your account team
                 </h2>
               </div>
@@ -111,7 +111,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
                 You'll have an account manager who serves as your primary point of contact.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>Your account manager can help with:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>Your account manager can help with:</p>
               <ul className="space-y-2 mb-6">
                 {accountManagerSupport.map((item, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -120,7 +120,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
                 ))}
               </ul>
 
-              <p className="text-lg" style={{ color: '#0e1016' }}>
+              <p className="text-lg" style={{ color: '#000000' }}>
                 You're never on your own.
               </p>
             </div>
@@ -131,7 +131,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
             <div className="rounded-xl p-8" style={{ backgroundColor: '#ffdf4422', borderLeft: '4px solid #ffdf44' }}>
               <div className="flex items-start gap-4 mb-6">
                 <Calendar className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#ffdf44' }} />
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   Ongoing check-ins and support
                 </h2>
               </div>
@@ -159,7 +159,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
             <div className="rounded-xl p-8" style={{ backgroundColor: '#fe857622', borderLeft: '4px solid #fe8576' }}>
               <div className="flex items-start gap-4 mb-6">
                 <Edit3 className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#fe8576' }} />
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   Making changes and improvements
                 </h2>
               </div>
@@ -168,7 +168,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
                 It's normal for needs to evolve over time.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>You can:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>You can:</p>
               <ul className="space-y-2 mb-6">
                 {changeOptions.map((option, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -185,12 +185,12 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* What happens next Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
               What happens next
             </h2>
 
@@ -214,14 +214,14 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Before You Continue */}
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#4fabff' }}></div>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Before you continue
               </h2>
               <p className="text-gray-700 mb-4 text-lg">
@@ -240,7 +240,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
                 <button
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -249,7 +249,7 @@ export function AccountManagementPage({ onNext, onBack }: AccountManagementPageP
                 <button 
                   onClick={onNext}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to review
                   <ChevronRight className="w-5 h-5" />

@@ -69,7 +69,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#fe8576' }}></div>
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 Primary goal
               </h2>
               <p className="text-gray-700 text-lg">
@@ -81,7 +81,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
           {/* Intro Video Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl overflow-hidden border-2" style={{ borderColor: '#fe857666', backgroundColor: '#ffffff' }}>
-              <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+              <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                 <div className="text-center px-8">
                   <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: '#fe857699' }}>
                     <div className="w-0 h-0 border-l-[16px] border-l-white border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1"></div>
@@ -116,17 +116,17 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* What the script does Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#4fabff22', borderLeft: '4px solid #4fabff' }}>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 What the script does
               </h2>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>The Halda script:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>The Halda script:</p>
               <ul className="space-y-2 mb-6">
                 {scriptFunctions.map((func, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -144,11 +144,11 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
 
           {/* Who should complete this step Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
               Who should complete this step?
             </h2>
 
-            <p className="mb-4" style={{ color: '#0e1016' }}>Script installation is usually completed by:</p>
+            <p className="mb-4" style={{ color: '#000000' }}>Script installation is usually completed by:</p>
             <ul className="space-y-2 mb-6">
               {whoCanInstall.map((person, index) => (
                 <li key={index} className="flex gap-3 items-start">
@@ -166,12 +166,12 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* How to install the script Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
               How to install the script
             </h2>
 
@@ -196,7 +196,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
 
             {/* Script Code Box */}
             <div className="mt-8">
-              <label className="block mb-3" style={{ color: '#0e1016' }}>
+              <label className="block mb-3" style={{ color: '#000000' }}>
                 Halda Script
               </label>
               <div className="relative">
@@ -208,7 +208,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
                   className="absolute top-3 right-3 px-4 py-2 rounded text-sm transition-all flex items-center gap-2"
                   style={{ 
                     backgroundColor: scriptCopied ? '#4fabff' : '#ffffff',
-                    color: scriptCopied ? '#ffffff' : '#0e1016',
+                    color: scriptCopied ? '#ffffff' : '#000000',
                     border: '1px solid #d1d5db'
                   }}
                 >
@@ -233,14 +233,14 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Need help installing the script Section */}
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#4fabff' }}></div>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 Need help installing the script?
               </h2>
 
@@ -248,7 +248,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
                 If you're unsure how to install the script or don't have access to your website, we're happy to help.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>You can:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>You can:</p>
               <ul className="space-y-2 mb-6">
                 {helpOptions.map((option, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -265,11 +265,11 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
 
           {/* What happens after installation Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
               What happens after installation
             </h2>
 
-            <p className="mb-4" style={{ color: '#0e1016' }}>Once the script is installed:</p>
+            <p className="mb-4" style={{ color: '#000000' }}>Once the script is installed:</p>
             <ul className="space-y-2 mb-6">
               {postInstallSteps.map((step, index) => (
                 <li key={index} className="flex gap-3 items-start">
@@ -286,7 +286,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Important note Section */}
@@ -295,7 +295,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
               <div className="flex gap-4 items-start">
                 <AlertCircle className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: '#fe8576' }} />
                 <div>
-                  <h2 className="mb-3 text-xl" style={{ color: '#0e1016' }}>
+                  <h2 className="mb-3 text-xl" style={{ color: '#000000' }}>
                     Important note
                   </h2>
                   <p className="text-gray-700 mb-3 text-lg">
@@ -319,7 +319,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
                 <button
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -328,7 +328,7 @@ export function ScriptInstallationPage({ onNext, onBack }: ScriptInstallationPag
                 <button 
                   onClick={onNext}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to AI Training
                   <ChevronRight className="w-5 h-5" />

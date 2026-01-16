@@ -73,7 +73,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#907fff' }}></div>
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 Primary goal
               </h2>
               <p className="text-gray-700 text-lg">
@@ -85,7 +85,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
           {/* Intro Video Section */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto">
-              <div className="rounded-lg aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e1016' }}>
+              <div className="rounded-lg aspect-video flex items-center justify-center" style={{ backgroundColor: '#000000' }}>
                 <div className="text-center">
                   <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4">
                     <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"></div>
@@ -114,7 +114,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
           {/* What is the AI Hub Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#907fff22', borderLeft: '4px solid #907fff' }}>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 What is the AI Hub?
               </h2>
 
@@ -122,7 +122,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
                 The AI Hub is a central place visitors can open from your website to explore information at their own pace.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>From the AI Hub, visitors can:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>From the AI Hub, visitors can:</p>
               <ul className="space-y-2 mb-6">
                 {aiHubCapabilities.map((capability, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -138,7 +138,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
               {/* AI Hub GIF Preview */}
               <div className="mt-8">
                 <div className="rounded-lg overflow-hidden border-2" style={{ borderColor: '#907fff66', backgroundColor: '#ffffff' }}>
-                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                     <img 
                       src="https://placeholder-gif-url.com/ai-hub-example.gif"
                       alt="AI Hub example"
@@ -157,7 +157,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
           {/* What are content cards Section */}
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 What are content cards?
               </h2>
 
@@ -173,7 +173,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
                 </div>
 
                 <div className="rounded-lg p-6" style={{ backgroundColor: '#4fabff22' }}>
-                  <p className="mb-4" style={{ color: '#0e1016' }}>Each card includes:</p>
+                  <p className="mb-4" style={{ color: '#000000' }}>Each card includes:</p>
                   <ul className="space-y-2">
                     {cardComponents.map((component, index) => (
                       <li key={index} className="flex gap-3 items-start">
@@ -192,7 +192,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
               {/* Content Cards GIF Preview */}
               <div className="mt-8 max-w-4xl mx-auto">
                 <div className="rounded-lg overflow-hidden border-2" style={{ borderColor: '#4fabff66', backgroundColor: '#ffffff' }}>
-                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                     <img 
                       src="https://placeholder-gif-url.com/content-cards-example.gif"
                       alt="Content cards example"
@@ -210,13 +210,13 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* How Many Cards Section */}
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="inline-block rounded-lg p-6" style={{ backgroundColor: '#ffdf4433', border: '2px solid #ffdf4466' }}>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 How many cards should you add?
               </h2>
               <p className="text-gray-700 mb-4 text-lg">
@@ -231,7 +231,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
           {/* Add Your Content Cards Section */}
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 Add your content cards
               </h2>
               <p className="text-gray-700 mb-8 text-lg">
@@ -246,7 +246,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
                     style={{ borderColor: '#907fff66', backgroundColor: '#ffffff' }}
                   >
                     <div className="flex items-center justify-between mb-4">
-                      <h3 className="text-xl" style={{ color: '#0e1016' }}>
+                      <h3 className="text-xl" style={{ color: '#000000' }}>
                         Content card {index + 1}
                       </h3>
                       <button
@@ -260,7 +260,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
                     <div className="space-y-4">
                       {/* Headline */}
                       <div>
-                        <label className="block mb-2" style={{ color: '#0e1016' }}>
+                        <label className="block mb-2" style={{ color: '#000000' }}>
                           Headline
                         </label>
                         <p className="text-gray-600 text-sm mb-3">
@@ -277,7 +277,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
 
                       {/* Subheadline */}
                       <div>
-                        <label className="block mb-2" style={{ color: '#0e1016' }}>
+                        <label className="block mb-2" style={{ color: '#000000' }}>
                           Subheadline
                         </label>
                         <p className="text-gray-600 text-sm mb-3">
@@ -294,7 +294,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
 
                       {/* Call to Action */}
                       <div>
-                        <label className="block mb-2" style={{ color: '#0e1016' }}>
+                        <label className="block mb-2" style={{ color: '#000000' }}>
                           Call to action
                         </label>
                         <p className="text-gray-600 text-sm mb-3">
@@ -311,7 +311,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
 
                       {/* Link */}
                       <div>
-                        <label className="block mb-2" style={{ color: '#0e1016' }}>
+                        <label className="block mb-2" style={{ color: '#000000' }}>
                           Link
                         </label>
                         <p className="text-gray-600 text-sm mb-3">
@@ -367,11 +367,11 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#4fabff' }}></div>
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 Examples of content cards
               </h2>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>Examples might include:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>Examples might include:</p>
               <ul className="space-y-2 mb-6">
                 {exampleCards.map((example, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -380,7 +380,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
                 ))}
               </ul>
 
-              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#0e101633' }}>
+              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#00000033' }}>
                 These are just examples. Your cards should reflect what's most important for your school.
               </p>
             </div>
@@ -388,14 +388,14 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Before You Continue */}
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#fe8576' }}></div>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Before you continue
               </h2>
               <p className="text-gray-700 mb-3 text-lg">
@@ -414,7 +414,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
                 <button
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -423,7 +423,7 @@ export function AIHubPage({ onNext, onBack, initialContentCards = [] }: AIHubPag
                 <button 
                   onClick={() => onNext(contentCards)}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to integrations
                   <ChevronRight className="w-5 h-5" />

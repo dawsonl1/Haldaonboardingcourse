@@ -189,7 +189,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#4fabff' }}></div>
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 Primary goal
               </h2>
               <p className="text-gray-700 text-lg">
@@ -216,7 +216,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
           {/* How to Think About This Step */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#907fff22', borderLeft: '4px solid #907fff' }}>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 How to think about this step
               </h2>
               <p className="text-gray-700 mb-3 text-lg">
@@ -231,7 +231,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
           {/* The Different Types of Forms */}
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 The different types of forms
               </h2>
               <p className="text-gray-700 mb-8 text-lg">
@@ -246,11 +246,11 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                     className="text-left rounded-lg p-6 border-2 transition-all"
                     style={{ 
                       backgroundColor: selectedPreview === index ? '#4fabff22' : '#ffffff',
-                      borderColor: selectedPreview === index ? '#4fabff' : '#0e101622'
+                      borderColor: selectedPreview === index ? '#4fabff' : '#00000022'
                     }}
                   >
                     <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-xl" style={{ color: '#0e1016' }}>
+                      <h3 className="text-xl" style={{ color: '#000000' }}>
                         {form.name}
                       </h3>
                       {selectedPreview === index && (
@@ -268,7 +268,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
               <div className="max-w-5xl mx-auto">
                 <div className="rounded-lg overflow-hidden border-2 mb-6" style={{ borderColor: '#4fabff66', backgroundColor: '#ffffff' }}>
                   {/* GIF/Video Container */}
-                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+                  <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                     <img 
                       src={formTypes[selectedPreview].gifUrl}
                       alt={`${formTypes[selectedPreview].name} example`}
@@ -300,13 +300,13 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* How Many Forms */}
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="inline-block rounded-lg p-6" style={{ backgroundColor: '#ffdf4433', border: '2px solid #ffdf4466' }}>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 How many forms should you choose?
               </h2>
               <p className="text-gray-700 mb-4 text-lg">
@@ -329,7 +329,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
           {/* Which Forms Selection */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto">
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 Which forms would you like to start with?
               </h2>
               <p className="text-gray-700 mb-6 text-lg">
@@ -349,7 +349,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                       className="w-full text-left rounded-lg p-4 border-2 transition-all"
                       style={{
                         backgroundColor: isSelected ? '#4fabff22' : '#ffffff',
-                        borderColor: isSelected ? '#4fabff' : '#0e101633',
+                        borderColor: isSelected ? '#4fabff' : '#00000033',
                         opacity: isDisabled && !isSelected ? 0.5 : 1,
                         cursor: isDisabled && !isSelected ? 'not-allowed' : 'pointer'
                       }}
@@ -359,11 +359,11 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                           {isSelected ? (
                             <CheckCircle2 className="w-6 h-6" style={{ color: '#4fabff' }} />
                           ) : (
-                            <div className="w-6 h-6 rounded-full border-2" style={{ borderColor: '#0e101633' }}></div>
+                            <div className="w-6 h-6 rounded-full border-2" style={{ borderColor: '#00000033' }}></div>
                           )}
                         </div>
                         <div className="flex-1">
-                          <p className="text-lg" style={{ color: '#0e1016' }}>
+                          <p className="text-lg" style={{ color: '#000000' }}>
                             {form.name}
                             {form.required && <span className="text-sm text-gray-500 ml-2">(Required)</span>}
                           </p>
@@ -391,14 +391,14 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Form-Specific Configuration */}
           {selectedForms.length > 0 && (
             <div className="mb-16">
               <div className="max-w-6xl mx-auto">
-                <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+                <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                   Configure each form
                 </h2>
                 <p className="text-gray-700 mb-8 text-lg">
@@ -427,7 +427,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                         >
                           <div className="flex items-center gap-3">
                             <CheckCircle2 className="w-5 h-5" style={{ color: '#4fabff' }} />
-                            <h3 className="text-xl" style={{ color: '#0e1016' }}>
+                            <h3 className="text-xl" style={{ color: '#000000' }}>
                               {form.name}
                             </h3>
                           </div>
@@ -443,7 +443,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                           <div className="px-6 py-6 space-y-8">
                             {/* Who is this form for? */}
                             <div>
-                              <h4 className="mb-4 text-lg" style={{ color: '#0e1016' }}>
+                              <h4 className="mb-4 text-lg" style={{ color: '#000000' }}>
                                 Who is this form for?
                               </h4>
                               <p className="text-gray-700 mb-4">
@@ -460,14 +460,14 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                                       className="text-left rounded-lg px-4 py-3 border-2 transition-all flex items-center gap-3"
                                       style={{
                                         backgroundColor: isSelected ? '#907fff22' : '#ffffff',
-                                        borderColor: isSelected ? '#907fff' : '#0e101633'
+                                        borderColor: isSelected ? '#907fff' : '#00000033'
                                       }}
                                     >
                                       <div className="flex-shrink-0">
                                         {isSelected ? (
                                           <CheckCircle2 className="w-5 h-5" style={{ color: '#907fff' }} />
                                         ) : (
-                                          <div className="w-5 h-5 rounded-full border-2" style={{ borderColor: '#0e101633' }}></div>
+                                          <div className="w-5 h-5 rounded-full border-2" style={{ borderColor: '#00000033' }}></div>
                                         )}
                                       </div>
                                       <span className="text-gray-700">{audience}</span>
@@ -479,7 +479,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
 
                             {/* Where should this form appear? */}
                             <div>
-                              <h4 className="mb-4 text-lg" style={{ color: '#0e1016' }}>
+                              <h4 className="mb-4 text-lg" style={{ color: '#000000' }}>
                                 Where should this form appear on your website?
                               </h4>
                               <p className="text-gray-700 mb-4">
@@ -512,7 +512,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                               <button
                                 onClick={() => handleAddUrl(formId)}
                                 className="flex items-center gap-2 px-4 py-2 rounded-lg border transition-all hover:opacity-80"
-                                style={{ backgroundColor: '#ffffff', borderColor: '#0e101633', color: '#0e1016' }}
+                                style={{ backgroundColor: '#ffffff', borderColor: '#00000033', color: '#000000' }}
                               >
                                 <Plus className="w-4 h-4" />
                                 Add another URL
@@ -525,7 +525,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
 
                             {/* Specific challenges */}
                             <div>
-                              <h4 className="mb-4 text-lg" style={{ color: '#0e1016' }}>
+                              <h4 className="mb-4 text-lg" style={{ color: '#000000' }}>
                                 Are there specific challenges you're hoping this form will help overcome? <span className="text-gray-400 text-base">(optional)</span>
                               </h4>
                               <p className="text-gray-700 mb-4">
@@ -555,7 +555,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
           {/* Priority Order */}
           {selectedForms.length > 1 && (
             <div className="mb-16 max-w-4xl mx-auto">
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Which form should we prioritize first? <span className="text-gray-400 text-xl">(optional)</span>
               </h2>
               <p className="text-gray-700 mb-6 text-lg">
@@ -577,11 +577,11 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                       className="flex items-center gap-3 p-4 rounded-lg border cursor-move transition-all"
                       style={{
                         backgroundColor: draggedItem === formId ? '#907fff22' : '#ffffff',
-                        borderColor: '#0e101633'
+                        borderColor: '#00000033'
                       }}
                     >
                       <GripVertical className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                      <span className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#907fff33', color: '#0e1016' }}>
+                      <span className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#907fff33', color: '#000000' }}>
                         {index + 1}
                       </span>
                       <span className="text-gray-700">{form.name}</span>
@@ -598,14 +598,14 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Before You Continue */}
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#fe8576' }}></div>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Before you continue
               </h2>
               <p className="text-gray-700 mb-3 text-lg">
@@ -624,7 +624,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                 <button
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -634,7 +634,7 @@ export function FormSetupPage({ onNext, onBack, initialSelectedForms = [], initi
                   onClick={() => onNext(selectedForms, formConfigs)}
                   disabled={!isValid}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg disabled:opacity-50 disabled:cursor-not-allowed hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to AI Hub
                   <ChevronRight className="w-5 h-5" />

@@ -66,7 +66,7 @@ export function IntegrationsPage({
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#4fabff' }}></div>
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 Primary goal
               </h2>
               <p className="text-gray-700 text-lg">
@@ -93,11 +93,11 @@ export function IntegrationsPage({
           {/* How lead delivery works Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#4fabff22', borderLeft: '4px solid #4fabff' }}>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 How lead delivery works
               </h2>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>When a visitor submits a form:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>When a visitor submits a form:</p>
               <ul className="space-y-2 mb-6">
                 {deliverySteps.map((step, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -114,13 +114,13 @@ export function IntegrationsPage({
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Where should we send captured leads Section */}
           <div className="mb-16">
             <div className="max-w-5xl mx-auto">
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 Where should we send captured leads?
               </h2>
               <p className="text-gray-700 mb-8 text-lg">
@@ -142,7 +142,7 @@ export function IntegrationsPage({
                   }}
                 >
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl" style={{ color: '#0e1016' }}>CRM</h3>
+                    <h3 className="text-xl" style={{ color: '#000000' }}>CRM</h3>
                     {deliveryDestination === 'crm' && (
                       <CheckCircle2 className="w-6 h-6" style={{ color: '#907fff' }} />
                     )}
@@ -166,7 +166,7 @@ export function IntegrationsPage({
                   }}
                 >
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl" style={{ color: '#0e1016' }}>Google Sheet</h3>
+                    <h3 className="text-xl" style={{ color: '#000000' }}>Google Sheet</h3>
                     {deliveryDestination === 'google-sheet' && (
                       <CheckCircle2 className="w-6 h-6" style={{ color: '#907fff' }} />
                     )}
@@ -183,7 +183,7 @@ export function IntegrationsPage({
           {deliveryDestination === 'crm' && (
             <div className="mb-16">
               <div className="max-w-4xl mx-auto">
-                <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                   Which CRM do you use?
                 </h2>
                 <p className="text-gray-700 mb-6 text-lg">
@@ -191,14 +191,14 @@ export function IntegrationsPage({
                 </p>
 
                 <div className="mb-6">
-                  <label className="block mb-3" style={{ color: '#0e1016' }}>
+                  <label className="block mb-3" style={{ color: '#000000' }}>
                     CRM provider
                   </label>
                   <select
                     value={crmProvider}
                     onChange={(e) => setCrmProvider(e.target.value as CRMProvider)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-opacity-50 bg-white"
-                    style={{ color: crmProvider ? '#0e1016' : '#9ca3af' }}
+                    style={{ color: crmProvider ? '#000000' : '#9ca3af' }}
                   >
                     <option value="">Select a CRM provider</option>
                     {crmProviders.map((provider) => (
@@ -211,7 +211,7 @@ export function IntegrationsPage({
 
                 {crmProvider === 'Other' && (
                   <div className="mt-6">
-                    <label className="block mb-3" style={{ color: '#0e1016' }}>
+                    <label className="block mb-3" style={{ color: '#000000' }}>
                       Please tell us which CRM you use
                     </label>
                     <input
@@ -235,7 +235,7 @@ export function IntegrationsPage({
           {deliveryDestination === 'google-sheet' && (
             <div className="mb-16">
               <div className="max-w-4xl mx-auto">
-                <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                   Google Sheet setup
                 </h2>
                 <p className="text-gray-700 mb-6 text-lg">
@@ -243,7 +243,7 @@ export function IntegrationsPage({
                 </p>
 
                 <div>
-                  <label className="block mb-3" style={{ color: '#0e1016' }}>
+                  <label className="block mb-3" style={{ color: '#000000' }}>
                     Google account email
                   </label>
                   <input
@@ -264,7 +264,7 @@ export function IntegrationsPage({
           {/* Divider */}
           {deliveryDestination && (
             <div className="max-w-4xl mx-auto mb-16">
-              <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+              <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
             </div>
           )}
 
@@ -272,7 +272,7 @@ export function IntegrationsPage({
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#ffdf44' }}></div>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 What to expect with integrations
               </h2>
 
@@ -280,7 +280,7 @@ export function IntegrationsPage({
                 Once your first form is built, we'll begin the integration process for your selected destination.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>Depending on the system you choose, this may involve:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>Depending on the system you choose, this may involve:</p>
               <ul className="space-y-2 mb-6">
                 {integrationSteps.map((step, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -297,12 +297,12 @@ export function IntegrationsPage({
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Support and next steps Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
               Support and next steps
             </h2>
 
@@ -317,14 +317,14 @@ export function IntegrationsPage({
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Before You Continue */}
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#fe8576' }}></div>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Before you continue
               </h2>
               <p className="text-gray-700 text-lg">
@@ -340,7 +340,7 @@ export function IntegrationsPage({
                 <button
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -349,7 +349,7 @@ export function IntegrationsPage({
                 <button 
                   onClick={() => onNext(deliveryDestination, crmProvider, otherCrmName, googleEmail)}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to AI Landing Pages
                   <ChevronRight className="w-5 h-5" />

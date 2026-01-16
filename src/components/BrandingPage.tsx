@@ -59,7 +59,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#907fff' }}></div>
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 Primary goal
               </h2>
               <p className="text-gray-700 text-lg">
@@ -89,7 +89,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
               <div className="mb-6">
-                <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+                <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                   What matters visually
                 </h2>
               </div>
@@ -105,11 +105,11 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                 </div>
 
                 <div className="rounded-lg p-6" style={{ backgroundColor: '#4fabff33' }}>
-                  <p className="mb-4" style={{ color: '#0e1016' }}>Things like:</p>
+                  <p className="mb-4" style={{ color: '#000000' }}>Things like:</p>
                   <ul className="space-y-2">
                     {visualCues.map((cue, index) => (
                       <li key={index} className="flex gap-3 items-start">
-                        <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#0e1016' }} />
+                        <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#000000' }} />
                         <span className="text-gray-700">{cue}</span>
                       </li>
                     ))}
@@ -121,12 +121,12 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Share Branding Assets Section - Integrated form */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
               Share branding assets <span className="text-gray-400 text-xl">(optional)</span>
             </h2>
 
@@ -136,7 +136,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
 
             <div className="rounded-lg p-8" style={{ backgroundColor: '#ffdf4433', border: '2px solid #ffdf4466' }}>
               <div className="mb-4">
-                <label htmlFor="drive-link" className="block mb-3 text-lg" style={{ color: '#0e1016' }}>
+                <label htmlFor="drive-link" className="block mb-3 text-lg" style={{ color: '#000000' }}>
                   Google Drive link for logos, photos, or videos
                 </label>
                 <div className="flex gap-3 items-center">
@@ -161,7 +161,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
               <div className="mb-8">
-                <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+                <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                   Features or programs to highlight <span className="text-gray-400 text-xl">(optional)</span>
                 </h2>
                 <p className="text-gray-700 text-lg max-w-3xl">
@@ -172,7 +172,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="md:col-span-2">
                   <div className="mb-6">
-                    <label htmlFor="feature-input" className="block mb-3" style={{ color: '#0e1016' }}>
+                    <label htmlFor="feature-input" className="block mb-3" style={{ color: '#000000' }}>
                       Add a feature or program (one at a time)
                     </label>
                     <div className="flex gap-3">
@@ -188,7 +188,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                       <button
                         onClick={handleAddFeature}
                         className="px-6 py-3 rounded-lg text-white transition-all hover:opacity-90 flex items-center gap-2"
-                        style={{ backgroundColor: '#0e1016' }}
+                        style={{ backgroundColor: '#000000' }}
                       >
                         <Plus className="w-5 h-5" />
                         Add
@@ -201,7 +201,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                           <div
                             key={index}
                             className="flex items-center justify-between px-4 py-3 rounded-lg border"
-                            style={{ backgroundColor: '#ffffff99', borderColor: '#0e101666' }}
+                            style={{ backgroundColor: '#ffffff99', borderColor: '#00000066' }}
                           >
                             <span className="text-gray-700">{feature}</span>
                             <button
@@ -229,7 +229,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                         key={index}
                         onClick={() => setCurrentFeature(example)}
                         className="px-4 py-2 rounded-lg text-sm border transition-colors hover:opacity-80 text-left"
-                        style={{ backgroundColor: '#ffffff', borderColor: '#0e101633', color: '#0e1016' }}
+                        style={{ backgroundColor: '#ffffff', borderColor: '#00000033', color: '#000000' }}
                       >
                         {example}
                       </button>
@@ -242,13 +242,13 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* If You Don't Provide Anything Section - Simple callout */}
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#fe857633', borderLeft: '4px solid #fe8576' }}>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 If you don't provide anything
               </h2>
               <p className="text-gray-700 mb-3 text-lg">
@@ -264,7 +264,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#907fff' }}></div>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Before you continue
               </h2>
               <p className="text-gray-700 mb-3 text-lg">
@@ -283,7 +283,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                 <button 
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -292,7 +292,7 @@ export function BrandingPage({ onNext, onBack, initialDriveLink = '', initialFea
                 <button 
                   onClick={() => onNext(driveLink, features)}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to form setup
                   <ChevronRight className="w-5 h-5" />

@@ -49,7 +49,7 @@ export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: 
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200" style={{ backgroundColor: '#4fabff22' }}>
-          <h2 className="text-xl" style={{ color: '#0e1016' }}>Onboarding Journey</h2>
+          <h2 className="text-xl" style={{ color: '#000000' }}>Onboarding Journey</h2>
           <button
             onClick={onClose}
             className="p-2 rounded-lg transition-colors hover:bg-white hover:bg-opacity-50"
@@ -155,7 +155,7 @@ export function NavigationSidebar({ isOpen, onClose, currentPage, onNavigate }: 
                         <span
                           className="text-left transition-colors"
                           style={{
-                            color: isActive ? '#0e1016' : isPast ? '#4a5568' : '#9ca3af'
+                            color: isActive ? '#000000' : isPast ? '#4a5568' : '#9ca3af'
                           }}
                         >
                           {step.label}

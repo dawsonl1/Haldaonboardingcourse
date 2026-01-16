@@ -1,0 +1,39 @@
+Frontend hosting:
+	•	The React/TypeScript onboarding course is built locally.
+	•	The build output (HTML, JS, CSS) plus all media (videos + GIFs) are uploaded to a private S3 bucket.
+	•	CloudFront sits in front of that S3 bucket and serves everything to users securely.
+	•	CloudFront gives you the public URL (something like dxxxxx.cloudfront.net) that users will access.
+
+Deployment steps (each time you update the frontend):
+	1.	Run the React build command locally.
+	2.	Upload the new build output to the S3 bucket into the app/ folder.
+	3.	Upload/update media assets in media/videos/ and media/gifs/.
+	4.	CloudFront automatically serves the new version (may take a few minutes due to caching).
+	5.	If needed, trigger a CloudFront cache invalidation for index.html or assets to ensure fresh content.
+
+Backend workflow (for HubSpot ticket creation):
+	•	A single AWS Lambda function receives form submissions from the frontend.
+	•	Lambda uses a HubSpot private app token (stored as an environment variable) to call HubSpot’s Tickets API.
+	•	API Gateway exposes a /hubspot/ticket POST endpoint for the frontend to call.
+	•	The frontend sends structured JSON to this endpoint when the partner completes onboarding steps.
+
+Security model:
+	•	S3 bucket stays private; CloudFront uses Origin Access Control to read from it.
+	•	HubSpot tokens never touch the browser — only stored in Lambda environment variables.
+	•	Frontend talks to Lambda via API Gateway over HTTPS.
+
+Scaling considerations:
+	•	CloudFront handles global content distribution automatically.
+	•	Lambda scales automatically for backend requests.
+	•	No servers to manage.
+
+Failure modes (simple):
+	•	If frontend fails → check S3 content + CloudFront caching.
+	•	If ticket creation fails → check Lambda logs + HubSpot API.
+	•	No persistent backend services to break.
+
+Future enhancements (optional, not required now):
+	•	Custom domain using Route 53 (ex: onboarding.halda.ai).
+	•	Authentication so only logged-in partners can do the course.
+	•	Signed URLs for videos if you want to lock down media.
+	•	Analytics event logging for onboarding progress tracking.

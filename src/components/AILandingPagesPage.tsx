@@ -45,7 +45,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#907fff' }}></div>
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 Primary goal
               </h2>
               <p className="text-gray-700 text-lg">
@@ -57,7 +57,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
           {/* Intro Video Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl overflow-hidden border-2" style={{ borderColor: '#4fabff66', backgroundColor: '#ffffff' }}>
-              <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#0e101611' }}>
+              <div className="aspect-video flex items-center justify-center" style={{ backgroundColor: '#00000011' }}>
                 <div className="text-center px-8">
                   <div className="w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: '#4fabff99' }}>
                     <div className="w-0 h-0 border-l-[16px] border-l-white border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent ml-1"></div>
@@ -90,13 +90,13 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* What is an AI Landing Page Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#907fff22', borderLeft: '4px solid #907fff' }}>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 What is an AI Landing Page?
               </h2>
 
@@ -104,7 +104,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
                 An AI Landing Page is a standalone page built for a specific purpose.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>Instead of sending visitors from an ad or email to your homepage, AI Landing Pages:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>Instead of sending visitors from an ad or email to your homepage, AI Landing Pages:</p>
               <ul className="space-y-2 mb-6">
                 {landingPageFeatures.map((feature, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -121,11 +121,11 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
 
           {/* Common use cases Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
               Common use cases
             </h2>
 
-            <p className="mb-4" style={{ color: '#0e1016' }}>Schools commonly use AI Landing Pages for:</p>
+            <p className="mb-4" style={{ color: '#000000' }}>Schools commonly use AI Landing Pages for:</p>
             <ul className="space-y-2 mb-6">
               {useCases.map((useCase, index) => (
                 <li key={index} className="flex gap-3 items-start">
@@ -141,14 +141,14 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* What's included Section */}
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#ffdf44' }}></div>
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 What's included
               </h2>
 
@@ -156,7 +156,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
                 Each partner receives <strong>one AI Landing Page</strong> to experience the value of a focused gateway for visitors coming from advertising or outreach.
               </p>
 
-              <p className="mb-4" style={{ color: '#0e1016' }}>This included landing page allows you to:</p>
+              <p className="mb-4" style={{ color: '#000000' }}>This included landing page allows you to:</p>
               <ul className="space-y-2 mb-6">
                 {includedBenefits.map((benefit, index) => (
                   <li key={index} className="flex gap-3 items-start">
@@ -173,13 +173,13 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Request your AI Landing Page Section */}
           <div className="mb-16">
             <div className="max-w-5xl mx-auto">
-              <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
                 Request your AI Landing Page
               </h2>
               <p className="text-gray-700 mb-8 text-lg">
@@ -201,7 +201,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
                   }}
                 >
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl" style={{ color: '#0e1016' }}>Yes, build my AI Landing Page</h3>
+                    <h3 className="text-xl" style={{ color: '#000000' }}>Yes, build my AI Landing Page</h3>
                     {landingPageRequest === 'yes' && (
                       <CheckCircle2 className="w-6 h-6 flex-shrink-0 ml-2" style={{ color: '#4fabff' }} />
                     )}
@@ -222,7 +222,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
                   }}
                 >
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl" style={{ color: '#0e1016' }}>No, I'll request this later</h3>
+                    <h3 className="text-xl" style={{ color: '#000000' }}>No, I'll request this later</h3>
                     {landingPageRequest === 'no' && (
                       <CheckCircle2 className="w-6 h-6 flex-shrink-0 ml-2" style={{ color: '#4fabff' }} />
                     )}
@@ -238,7 +238,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
 
           {/* Additional landing pages Section */}
           <div className="mb-16 max-w-4xl mx-auto">
-            <h2 className="mb-6 text-2xl" style={{ color: '#0e1016' }}>
+            <h2 className="mb-6 text-2xl" style={{ color: '#000000' }}>
               Additional landing pages
             </h2>
 
@@ -253,14 +253,14 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Before You Continue */}
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#fe8576' }}></div>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Before you continue
               </h2>
               <p className="text-gray-700 mb-4 text-lg">
@@ -279,7 +279,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
                 <button
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -288,7 +288,7 @@ export function AILandingPagesPage({ onNext, onBack, initialLandingPageRequest =
                 <button 
                   onClick={() => onNext(landingPageRequest)}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   Continue to script installation
                   <ChevronRight className="w-5 h-5" />

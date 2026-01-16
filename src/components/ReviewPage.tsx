@@ -80,7 +80,7 @@ export function ReviewPage({
           <div className="mb-12 max-w-6xl mx-auto">
             <div className="rounded-lg border-2 overflow-hidden" style={{ borderColor: '#907fff66' }}>
               <div className="p-6 flex items-center justify-between" style={{ backgroundColor: '#907fff22' }}>
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   Branding and appearance
                 </h2>
                 <button
@@ -126,7 +126,7 @@ export function ReviewPage({
           <div className="mb-12 max-w-6xl mx-auto">
             <div className="rounded-lg border-2 overflow-hidden" style={{ borderColor: '#4fabff66' }}>
               <div className="p-6 flex items-center justify-between" style={{ backgroundColor: '#4fabff22' }}>
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   Form setup
                 </h2>
                 <button
@@ -143,7 +143,7 @@ export function ReviewPage({
                   <div className="space-y-6">
                     {selectedForms.map((formId) => (
                       <div key={formId} className="border-l-4 pl-4" style={{ borderColor: '#4fabff' }}>
-                        <h3 className="text-lg mb-3" style={{ color: '#0e1016' }}>
+                        <h3 className="text-lg mb-3" style={{ color: '#000000' }}>
                           {formTypeNames[formId]}
                         </h3>
                         {formConfigs[formId] && (
@@ -182,7 +182,7 @@ export function ReviewPage({
           <div className="mb-12 max-w-6xl mx-auto">
             <div className="rounded-lg border-2 overflow-hidden" style={{ borderColor: '#907fff66' }}>
               <div className="p-6 flex items-center justify-between" style={{ backgroundColor: '#907fff22' }}>
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   AI Hub and content cards
                 </h2>
                 <button
@@ -198,7 +198,7 @@ export function ReviewPage({
                 {contentCards.length > 0 ? (
                   <div className="space-y-4">
                     {contentCards.map((card, index) => (
-                      <div key={card.id} className="rounded-lg p-4" style={{ backgroundColor: '#f8f9fa', border: '1px solid #0e101622' }}>
+                      <div key={card.id} className="rounded-lg p-4" style={{ backgroundColor: '#f8f9fa', border: '1px solid #00000022' }}>
                         <p className="text-sm text-gray-600 mb-2">Card {index + 1}</p>
                         {card.headline && <p className="text-gray-800 mb-1"><strong>Headline:</strong> {card.headline}</p>}
                         {card.subheadline && <p className="text-gray-700 mb-1"><strong>Subheadline:</strong> {card.subheadline}</p>}
@@ -218,13 +218,13 @@ export function ReviewPage({
           <div className="mb-12 max-w-6xl mx-auto">
             <div className="rounded-lg border-2 overflow-hidden" style={{ borderColor: '#ffdf4466' }}>
               <div className="p-6 flex items-center justify-between" style={{ backgroundColor: '#ffdf4422' }}>
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   Data and integrations
                 </h2>
                 <button
                   onClick={() => onEdit('integrations')}
                   className="px-4 py-2 rounded-lg text-white transition-all hover:opacity-90 flex items-center gap-2"
-                  style={{ backgroundColor: '#ffdf44', color: '#0e1016' }}
+                  style={{ backgroundColor: '#ffdf44', color: '#000000' }}
                 >
                   <Edit2 className="w-4 h-4" />
                   Edit
@@ -265,7 +265,7 @@ export function ReviewPage({
           <div className="mb-12 max-w-6xl mx-auto">
             <div className="rounded-lg border-2 overflow-hidden" style={{ borderColor: '#fe857666' }}>
               <div className="p-6 flex items-center justify-between" style={{ backgroundColor: '#fe857622' }}>
-                <h2 className="text-2xl" style={{ color: '#0e1016' }}>
+                <h2 className="text-2xl" style={{ color: '#000000' }}>
                   AI Landing Pages
                 </h2>
                 <button
@@ -294,13 +294,13 @@ export function ReviewPage({
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-12">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Final message */}
           <div className="mb-12 max-w-4xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#4fabff22', borderLeft: '4px solid #4fabff' }}>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Ready to finish?
               </h2>
               <p className="text-gray-700 text-lg mb-3">
@@ -319,7 +319,7 @@ export function ReviewPage({
                 <button 
                   onClick={onBack}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <ChevronLeft className="w-5 h-5" />
                   Back
@@ -328,7 +328,7 @@ export function ReviewPage({
                 <button 
                   onClick={onFinish}
                   className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 text-lg hover:opacity-90"
-                  style={{ backgroundColor: '#0e1016' }}
+                  style={{ backgroundColor: '#000000' }}
                 >
                   <CheckCircle2 className="w-5 h-5" />
                   Finish Onboarding

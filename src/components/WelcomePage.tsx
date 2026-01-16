@@ -46,7 +46,7 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
           {/* Intro Video Section */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto">
-              <div className="rounded-lg aspect-video flex items-center justify-center mb-6" style={{ backgroundColor: '#0e1016' }}>
+              <div className="rounded-lg aspect-video flex items-center justify-center mb-6" style={{ backgroundColor: '#000000' }}>
                 <div className="text-center">
                   <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center mx-auto mb-4">
                     <div className="w-0 h-0 border-l-[20px] border-l-white border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"></div>
@@ -86,7 +86,7 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
           {/* What This Course Includes Section */}
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
-              <h2 className="mb-8 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-8 text-3xl" style={{ color: '#000000' }}>
                 What this course includes
               </h2>
 
@@ -97,13 +97,13 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
                   </p>
 
                   <div className="rounded-lg p-6 mb-6" style={{ backgroundColor: '#4fabff22' }}>
-                    <p className="mb-4" style={{ color: '#0e1016' }}>You'll learn about:</p>
+                    <p className="mb-4" style={{ color: '#000000' }}>You'll learn about:</p>
                     <ul className="space-y-3">
                       {courseTopics.map((topic, index) => {
                         const Icon = topic.icon;
                         return (
                           <li key={index} className="flex gap-3 items-start">
-                            <Icon className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#0e1016' }} />
+                            <Icon className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#000000' }} />
                             <span className="text-gray-700">{topic.label}</span>
                           </li>
                         );
@@ -118,9 +118,9 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
 
                 <div className="rounded-lg p-6" style={{ backgroundColor: '#907fff33', border: '2px solid #907fff66' }}>
                   <div className="flex items-start gap-3">
-                    <Clock className="w-7 h-7 flex-shrink-0 mt-1" style={{ color: '#0e1016' }} />
+                    <Clock className="w-7 h-7 flex-shrink-0 mt-1" style={{ color: '#000000' }} />
                     <div>
-                      <p className="mb-3" style={{ color: '#0e1016' }}>How long this takes</p>
+                      <p className="mb-3" style={{ color: '#000000' }}>How long this takes</p>
                       <p className="text-gray-700 mb-3">Most partners complete the course in about 30–45 minutes total.</p>
                       <p className="text-gray-600">
                         You don't need to do it all at once. You can pause at any time and come back later right where you left off.
@@ -134,13 +134,13 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* What You Do and Don't Need Section */}
           <div className="mb-16">
             <div className="max-w-6xl mx-auto">
-              <h2 className="mb-8 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-8 text-3xl" style={{ color: '#000000' }}>
                 What you do and don't need
               </h2>
 
@@ -148,8 +148,8 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
                 <div>
                   <div className="rounded-lg p-6 mb-4" style={{ backgroundColor: '#fe857622', borderLeft: '4px solid #fe8576' }}>
                     <div className="flex items-center gap-2 mb-4">
-                      <X className="w-5 h-5" style={{ color: '#0e1016' }} />
-                      <p style={{ color: '#0e1016' }}>You do not need:</p>
+                      <X className="w-5 h-5" style={{ color: '#000000' }} />
+                      <p style={{ color: '#000000' }}>You do not need:</p>
                     </div>
                     <ul className="space-y-2">
                       {doNotNeed.map((item, index) => (
@@ -165,8 +165,8 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
                 <div>
                   <div className="rounded-lg p-6 mb-4" style={{ backgroundColor: '#4fabff22', borderLeft: '4px solid #4fabff' }}>
                     <div className="flex items-center gap-2 mb-4">
-                      <Check className="w-5 h-5" style={{ color: '#0e1016' }} />
-                      <p style={{ color: '#0e1016' }}>You will be asked to:</p>
+                      <Check className="w-5 h-5" style={{ color: '#000000' }} />
+                      <p style={{ color: '#000000' }}>You will be asked to:</p>
                     </div>
                     <ul className="space-y-2">
                       {willBeAsked.map((item, index) => (
@@ -190,16 +190,16 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Script Installation Section */}
           <div className="mb-16 max-w-5xl mx-auto">
             <div className="rounded-xl p-8" style={{ backgroundColor: '#ffdf4422', borderLeft: '4px solid #ffdf44' }}>
               <div className="flex items-start gap-4 mb-6">
-                <Code className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#0e1016' }} />
+                <Code className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#000000' }} />
                 <div>
-                  <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+                  <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                     Script installation (important)
                   </h2>
                   <p className="text-gray-700 text-lg mb-4">
@@ -209,7 +209,7 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
                     This script allows forms, content, and integrations to work correctly. Without it, nothing can go live.
                   </p>
 
-                  <div className="border-t pt-6" style={{ borderColor: '#0e101633' }}>
+                  <div className="border-t pt-6" style={{ borderColor: '#00000033' }}>
                     <p className="text-gray-700 text-lg mb-4">
                       You won't be asked to install the script right now. Clear instructions and guidance will be provided later in the course, and our team is happy to help when you reach that step.
                     </p>
@@ -226,7 +226,7 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#907fff' }}></div>
-              <h2 className="mb-6 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-6 text-3xl" style={{ color: '#000000' }}>
                 What happens as you move through the course
               </h2>
 
@@ -243,7 +243,7 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
                 ))}
               </ul>
 
-              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#0e101633' }}>
+              <p className="text-gray-700 text-lg border-t pt-6" style={{ borderColor: '#00000033' }}>
                 Completing the course helps us move faster on your setup.
               </p>
             </div>
@@ -255,7 +255,7 @@ export function WelcomePage({ onNext }: WelcomePageProps) {
               <button 
                 onClick={onNext}
                 className="text-white px-8 py-3 rounded transition-all inline-flex items-center gap-2 mb-3 text-lg hover:opacity-90"
-                style={{ backgroundColor: '#0e1016' }}
+                style={{ backgroundColor: '#000000' }}
               >
                 Begin onboarding
                 <ChevronRight className="w-5 h-5" />

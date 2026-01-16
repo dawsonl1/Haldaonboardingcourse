@@ -53,7 +53,7 @@ export function EndingPage() {
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="rounded-xl p-8 text-center" style={{ backgroundColor: '#4fabff22', border: '2px solid #4fabff66' }}>
               <Sparkles className="w-16 h-16 mx-auto mb-4" style={{ color: '#4fabff' }} />
-              <h2 className="mb-4 text-3xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-3xl" style={{ color: '#000000' }}>
                 You've taken the first step
               </h2>
               <p className="text-gray-700 text-lg mb-3">
@@ -67,7 +67,7 @@ export function EndingPage() {
 
           {/* What Happens Next Section */}
           <div className="mb-16 max-w-5xl mx-auto">
-            <h2 className="mb-8 text-3xl text-center" style={{ color: '#0e1016' }}>
+            <h2 className="mb-8 text-3xl text-center" style={{ color: '#000000' }}>
               What happens next
             </h2>
             
@@ -81,7 +81,7 @@ export function EndingPage() {
                   <div className="w-12 h-12 rounded-full mb-4 flex items-center justify-center" style={{ backgroundColor: `${step.color}33` }}>
                     <step.icon className="w-6 h-6" style={{ color: step.color }} />
                   </div>
-                  <h3 className="mb-3 text-xl" style={{ color: '#0e1016' }}>
+                  <h3 className="mb-3 text-xl" style={{ color: '#000000' }}>
                     {step.title}
                   </h3>
                   <p className="text-gray-700">
@@ -92,7 +92,7 @@ export function EndingPage() {
             </div>
 
             <div className="rounded-lg p-6" style={{ backgroundColor: '#907fff22' }}>
-              <h3 className="mb-4 text-xl" style={{ color: '#0e1016' }}>
+              <h3 className="mb-4 text-xl" style={{ color: '#000000' }}>
                 Next steps:
               </h3>
               <ul className="space-y-3">
@@ -108,14 +108,14 @@ export function EndingPage() {
 
           {/* Divider */}
           <div className="max-w-4xl mx-auto mb-16">
-            <div className="h-px" style={{ backgroundColor: '#0e101622' }}></div>
+            <div className="h-px" style={{ backgroundColor: '#00000022' }}></div>
           </div>
 
           {/* Timeline Section */}
           <div className="mb-16 max-w-4xl mx-auto">
             <div className="relative pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full" style={{ backgroundColor: '#ffdf44' }}></div>
-              <h2 className="mb-4 text-2xl" style={{ color: '#0e1016' }}>
+              <h2 className="mb-4 text-2xl" style={{ color: '#000000' }}>
                 Estimated timeline
               </h2>
               <p className="text-gray-700 text-lg mb-3">
@@ -136,7 +136,7 @@ export function EndingPage() {
               <div className="flex items-start gap-4">
                 <Mail className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: '#fe8576' }} />
                 <div>
-                  <h2 className="mb-3 text-2xl" style={{ color: '#0e1016' }}>
+                  <h2 className="mb-3 text-2xl" style={{ color: '#000000' }}>
                     Questions or concerns?
                   </h2>
                   <p className="text-gray-700 text-lg mb-2">
